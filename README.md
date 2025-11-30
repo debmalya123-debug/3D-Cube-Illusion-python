@@ -55,7 +55,7 @@ Advanced dual-window system that makes the cube appear to protrude out of the sc
 ## You need
 
 - Windows (for the window management stuff)
-- Python 3
+- Python 3 (3.9/3.10 advised)
 - Pygame
 
 ## How to run
