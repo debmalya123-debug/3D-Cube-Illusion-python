@@ -6,6 +6,10 @@ Here are three python scripts that create 3D cube illusions using **Pygame** and
 
 ### 1. `3dcube.py` - Simple Perspective Cube
 
+
+https://github.com/user-attachments/assets/666ea9d1-336f-4f1a-8e9e-135f95cb756e
+
+
 A clean, single-window perspective cube that expands as you drag it.
 
 - **Effect**: Drag the window around and the cube layers expand/contract based on window position.
@@ -18,6 +22,10 @@ A clean, single-window perspective cube that expands as you drag it.
 
 ### 2. `3dCube2.py` - Rotating Cube
 
+
+https://github.com/user-attachments/assets/4b6dc710-2585-448b-8a93-7da1372445b2
+
+
 This one rotates the cube based on where you drag the window.
 
 - **Effect**: Drag the window around and the cube rotates to face the center of the screen.
@@ -29,6 +37,10 @@ This one rotates the cube based on where you drag the window.
   ```
 
 ### 3. `3dCube3.py` - Protruding Overlay Cube
+
+
+https://github.com/user-attachments/assets/f8a527c5-193c-4da8-9713-dbf85c478175
+
 
 Advanced dual-window system that makes the cube appear to protrude out of the screen.
 
