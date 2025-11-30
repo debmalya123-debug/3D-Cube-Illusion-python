@@ -1,28 +1,40 @@
 # Python 3D Cube Illusions
 
-Here are two python scripts that mess with 3D cube illusions using **Pygame** and **Windows API**. They both react to where the window is on your screen.
+Here are three python scripts that create 3D cube illusions using **Pygame** and **Windows API**. They all react to where you drag the window on your screen.
 
 ## The Scripts
 
-### 1. `3dCube2.py` - Rotation
+### 1. `3dcube.py` - Simple Perspective Cube
+
+A clean, single-window perspective cube that expands as you drag it.
+
+- **Effect**: Drag the window around and the cube layers expand/contract based on window position.
+- **Visuals**: Green wireframe layers with a solid front face.
+- **How it works**: Front face stays anchored to screen center while back layers follow the window, creating dynamic perspective.
+- **Run it**:
+  ```bash
+  python 3dcube.py
+  ```
+
+### 2. `3dCube2.py` - Rotating Cube
 
 This one rotates the cube based on where you drag the window.
 
 - **Effect**: Drag the window around and the cube rotates to face the center of the screen.
-- **Visuals**: Flat shading, some transparency, glowing edges.
-- **How it works**: Calculates rotation angles based on distance from screen center.
+- **Visuals**: 3D rendered cube with flat shading, transparency, and glowing edges.
+- **How it works**: Calculates rotation angles based on distance from screen center, with smooth interpolation.
 - **Run it**:
   ```bash
   python 3dCube2.py
   ```
 
-### 2. `3dCube3.py` - Protrusion
+### 3. `3dCube3.py` - Protruding Overlay Cube
 
-This one makes the cube look like it's popping out of the monitor.
+Advanced dual-window system that makes the cube appear to protrude out of the screen.
 
-- **Effect**: The front face is in the window, but the rest of the cube is drawn on a transparent overlay so it looks like it's floating.
-- **Visuals**: Wireframe style with depth fading.
-- **How it works**: Uses two windows - one for the front face (that you drag) and a transparent one on top for the rest of the cube.
+- **Effect**: The cube appears anchored to screen center with layers protruding toward your draggable window.
+- **Visuals**: Wireframe layers drawn on a transparent fullscreen overlay with Liang-Barsky line clipping.
+- **How it works**: Spawns two processes - main draggable window and a topmost transparent overlay. The overlay clips lines to avoid drawing inside the main window, creating a clean protrusion effect.
 - **Run it**:
   ```bash
   python 3dCube3.py
